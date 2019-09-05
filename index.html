@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+      
+    <head>
+        <meta charset="UTF-8">
+        <title>第54回高専祭 - 久留米高専祭実行委員会</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/style.css">
+       
+    </head>
+   
+    <body>
+        
+        <div class="container">
+        <header>
+        <h1 class="title">
+            <span class="text">久留米高専</span>
+            <span class="text">第54回高専祭</span>
+            <span class="text2"> < NIT, Kurume College > </span>
+        </h1>
+            <ul class="menu">
+                <li><a hraf="#"><img src="img/matsuri.png">ホーム</a></li>
+                <li><a hraf="#"><img src="img/nitten.png">日程</a></li>
+                <li><a hraf="#"><img src="img/yatai.png">出店</a></li>
+                <li><a hraf="#"><img src="img/tenzi.png">展示</a></li>
+                <li><a hraf="#"><img src="img/kamera.png">活動の様子</a></li>
+                <li><a hraf="#"><img src="img/map.png">アクセス</a></li>
+            </ul>
+        </header>
+        </div><!--container-->
+      
+        <div class="phone">
+        <div class="drawer">
+            <ul class="rist" id="list1">
+                <li><a hraf="#">ホーム</a></li>
+                <li><a hraf="#">日程</a></li>
+                <li><a hraf="#">出店</a></li>
+                <li><a hraf="#">展示</a></li>
+                <li><a hraf="#">活動の様子</a></li>
+                <li><a hraf="#">アクセス</a></li>
+            </ul>
+            <div class="drbtn">
+                    <span class="hambarg"></span>
+                    <span class="hambarg"></span>
+                    <span class="hambarg"></span>
+                    <span>MENU</span>
+               </div><!--drbtn-->
+        </div><!--drawer-->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+         $(function() {
+            $('.drbtn').on('click', function () {
+             $(this).toggleClass('action');
+             $('.drawer').toggleClass('action');
+            });
+           });
+        </script>
+       
+    </body>
+   
+    
+</html> 
