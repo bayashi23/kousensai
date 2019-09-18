@@ -3,31 +3,28 @@
     font-family:'PixelMplus12-Regular';
     src: url('PixelMplus12-Regular.ttf') format("truetype");
 }
-
-
 .phone{
-  display: none;
-}
-
+    display: none;
+  }
 body{line-height:1.7;
     background: #333;
     color: #fff;
     margin: 20px 0px;}
 
-header{text-align: center;
-}
+header{
+    text-align: center;
+   
+        }
 
 header h1{
     font-family: PixelMplus12-Regular;
-}
+}  
+
 main{
-  margin: 10px 80px;
+    margin: 10px 80px
 }
-
-
 .title{
     text-align: center;
-   
 }
 .dai{
   text-decoration: none;
@@ -52,7 +49,6 @@ main{
 .menu li{
     display: inline-block;
     padding: 15px 25px 10px 25px;
-    
 }
 .menu li a{
     
@@ -61,7 +57,6 @@ main{
     padding: 10px;
     font-size: 18px;
 }
-
 .is-fixed {
   position: fixed;
   top: 0;
@@ -224,86 +219,36 @@ main{
     #list1 li a:hover:after {
         left: 23px;
     }
+    .honbun2{
+      margin: 20px 0;
+      font-size: 20px;
+      font-family: PixelMplus12-Regular;
+    }
 
-    .slider{
-      margin: 0px auto;
-      display: block;
-      
-    }
-    .slider img{
-      padding: 0 150px;
-      background-color: #333;
-    }
-    #loading {
-      width: 100vw;
-      height: 100vh;
-      background: #000;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 9999;
-  }
-   
-  #loading_barWrap {
-      width: 30vw;
-      height: calc(1rem + 5px);
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-  }
-   
-  #loading_bar {
-      width: 0;
-      height: 5px;
-      background: #fff;
-      transition-duration: 1s;
-  }
-   
-  .yomikomi {
-      text-align: center;
-      color: #fff;
-  }
-   
-  .loadingNone {
-      animation: loadingAnime 1s forwards;
-  }
-   
-  @keyframes loadingAnime {
-      0% {
-          opacity: 1;
-      }
-      99% {
-          opacity: 0;
-      }
-      100% {
-          opacity: 0;
-          display: none;
-      }
-  }
-    
+ 
     @media only screen and (max-width:500px) {
-  body{
-    margin: 5px 0px;
-  }
-      .text{
-        font-size: 20px;
-      }
-      .text2{
-        display: none;
-      }
-      .menu{
-        display: none;
-      }
-      .phone{
-        display:block;
-      }
-      main{
-        margin: 10px 0px;
-      }
-      .slider img{
-        padding: 40px 0px;
-      }
-      }
+        body{
+          margin: 5px 0px;
+        }
+        main{
+          margin: 10px 5px;
+        }
+            .text{
+              font-size: 20px;
+            }
+            .text2{
+              display: none;
+            }
+            .menu{
+              display: none;
+            }
+            .phone{
+              display:block;
+            }
+            .tyosaku{
+              font-size: 6px;
+            }
+            .honbun2{
+              font-size:  13px;
+            }
+        }

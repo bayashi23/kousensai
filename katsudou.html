@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+      
+    <head>
+        <meta charset="UTF-8">
+        <title>第54回高専祭 - 久留米高専祭実行委員会</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/sanitize.css.css">
+        <link rel="stylesheet" href="css/katsudou.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+   
+    <body>
+        
+        <div class="container">
+        <header>
+        <h1 class="title">
+            <span class="text">久留米高専</span>
+            <span class="text"><a href="index.html" class="dai">第54回高専祭</a></span>
+            <span class="text2"> < NIT, Kurume College > </span>
+        </h1>
+            <ul class="menu">
+                <li><a href="index.html"><img src="img/matsuri.png">ホーム</a></li>
+                <li><a href="#"><img src="img/nittei.png">日程</a></li>
+                <li><a href="#"><img src="img/yatai.png">出店</a></li>
+                <li><a href="#"><img src="img/tenzi.png">展示</a></li>
+                <li><a href="katsudou.html"><img src="img/kamera.png">活動の様子</a></li>
+                <li><a href="akusesu.html"><img src="img/map.png">アクセス</a></li>
+            </ul>
+        </header>
+        </div><!--container-->
+      
+        <div class="phone">
+        <div class="drawer">
+            <ul class="rist" id="list1">
+                <li><a href="index.html">ホーム<img src="img/matsuri.png"></a></li>
+                <li><a href="#">日程<img src="img/nittei.png"></a></li>
+                <li><a href="#">出店<img src="img/yatai.png"></a></li>
+                <li><a href="#">展示<img src="img/tenzi.png"></a></li>
+                <li><a href="katsudou.html">活動の様子<img src="img/kamera.png"></a></li>
+                <li><a href="akusesu.html">アクセス<img src="img/map.png"></a></li>
+            </ul>
+            <div class="drbtn">
+                    <span class="hambarg"></span>
+                    <span class="hambarg"></span>
+                    <span class="hambarg"></span>
+                    <span>MENU</span>
+               </div><!--drbtn-->
+        </div><!--drawer-->
+        </div>
+
+        <main>
+            <p class="honbun2">▼高専祭実行委員の活動の様子やイベントの参加方法等、随時Twitterで更新中！！<br>
+                ▼ぜひ↓のアカウントを『フォロー』,『拡散』してね
+            </p>
+            <a class="twitter-timeline" data-width="600" data-height="600" data-theme="dark" href="https://twitter.com/knct_fes_staff?ref_src=twsrc%5Etfw">Tweets by knct_fes_staff</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <p class="tyosaku">© 2019 久留米高専 高専祭実行委員会　NIT,Kurume College<br>
+                管理者：久留米高専　高専祭実行委員会<br>
+                お問い合わせ：
+            </p>
+        </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+        $(function() {
+  var $win = $(window),
+      $main = $('main'),
+      $nav = $('.menu'),
+      navHeight = $nav.outerHeight(),
+      navPos = $nav.offset().top,
+      fixedClass = 'is-fixed';
+
+  $win.on('load scroll', function() {
+    var value = $(this).scrollTop();
+    if ( value > navPos ) {
+      $nav.addClass(fixedClass);
+      $main.css('margin-top', navHeight);
+    } else {
+      $nav.removeClass(fixedClass);
+      $main.css('margin-top', '0');
+    }
+  });
+});
+         $(function() {
+            $('.drbtn').on('click', function () {
+             $(this).toggleClass('action');
+             $('.drawer').toggleClass('action');
+            });
+           });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    </body>
+</html>

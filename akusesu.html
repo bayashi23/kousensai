@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>第54回高専祭 - 久留米高専祭実行委員会</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/akusesu.css">
         <link rel="stylesheet" href="css/sanitize.css.css">        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -14,14 +14,6 @@
     <body>
         
         <div class="container">
-
-        <div id="loading">
-            <div id="loading_barWrap">
-                 <p class="yomikomi">▼ハカイコウセン！</p>
-                <img src="img/IMG_1250.GIF" width="50" height="50"><div id="loading_bar"></div>
-            </div>
-         </div>
-    
         <header>
         <h1 class="title">
             <span class="text">久留米高専</span>
@@ -59,14 +51,8 @@
         </div>
 
         <main>
-        <div class="slider">
-            <img src="suraido/omote.jpg" width="600px" height="400px" alt="">
-            <img src="suraido/ura.jpg" width="600px" height="400px" alt="">
-            <img src="suraido/yakei.jpg" width="600px" height="400px" alt="">
-        </div>
-        <div class="honbun">
-         <p>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br></p>
-        </div>
+        <p class="tyui">※注意※<br>
+        </p>
         <div class="tyosaku">
             <p>© 2019 久留米高専 高専祭実行委員会　NIT,Kurume College<br>
                 管理者：久留米高専　高専祭実行委員会<br>
@@ -78,7 +64,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $(function() {
-        var $win = $(window),
+  var $win = $(window),
       $main = $('main'),
       $nav = $('.menu'),
       navHeight = $nav.outerHeight(),
@@ -102,35 +88,6 @@
              $('.drawer').toggleClass('action');
             });
            });
-
-    
-       var images = document.getElementsByTagName('img');
-        var loadingBar = document.getElementById('loading_bar');
-        var loadingWrap = document.getElementById('loading_barWrap');
-        var loadingArea = document.getElementById('loading');
-        
-        var imgLen = images.length;
-        var barLen = 100 / imgLen;
-        console.log(barLen);
-        var barWidth = 0;
-        
-        for (var i = 0; i < imgLen; i++) {
-            images[i].onload = function() {
-                barWidth = barWidth + barLen;
-                loadingBar.style.width = barWidth + '%';
-            }
-        }
-        
-        function loadLen() {
-            if (!loadingArea.classList.contains('loadingNone')) {
-                if (loadingBar.clientWidth === loadingWrap.clientWidth) {
-                    loadingArea.classList.add('loadingNone');
-                } else {
-                    setTimeout(loadLen, 5);
-                }
-            }
-        }
-       
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -143,7 +100,6 @@
                     });
                 });
         </script>
-   
     </body>
    
     
