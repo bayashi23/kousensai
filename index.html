@@ -17,8 +17,8 @@
 
         <div id="loading">
             <div id="loading_barWrap">
-                 <p class="yomikomi">▼ハカイコウセン！</p>
-                <img src="img/IMG_1250.GIF" width="50" height="50"><div id="loading_bar"></div>
+                 <p class="yomikomi">▼高専生　ノ　ハカイコウセン！</p>
+                <img class="get" src="img/IMG_1250.GIF" width="50" height="50" style="position:absolute; top:30px; left:-50px"><div id="loading_bar"></div>
             </div>
          </div>
     
@@ -121,15 +121,13 @@
             }
         }
         
-        function loadLen() {
-            if (!loadingArea.classList.contains('loadingNone')) {
-                if (loadingBar.clientWidth === loadingWrap.clientWidth) {
-                    loadingArea.classList.add('loadingNone');
-                } else {
-                    setTimeout(loadLen, 5);
-                }
-            }
-        }
+        $(function(){
+　var loading = $("#loading");
+　var isHidden = function(){
+　　loading.fadeOut(1000); 
+　};
+　setTimeout(isHidden,1000);
+});
        
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
