@@ -251,6 +251,7 @@ main{
       }
       .houho{
         border: solid 4px #fff;
+        display: block;
       }
       .nisi {
         font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
@@ -308,6 +309,10 @@ main{
       .btn-box:hover:before {
         transform: scale(1);
       }
+      .tyui{
+        font-size: 30px;
+        color: #fa052b;
+      }
     
     @media only screen and (max-width:500px) {
   
@@ -347,5 +352,8 @@ main{
       }
       .akus{
         font-size: 13px;
+      }
+      .houho{
+        clear: both;
       }
       }
