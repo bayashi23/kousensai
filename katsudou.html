@@ -51,19 +51,13 @@
         </div>
 
         <main>
-            <p class="honbun2">▼高専祭実行委員の活動の様子やイベントの参加方法等、随時Twitterで更新中！！<br>
+            <p class="honbun2">▼高専祭実行委員の活動の様子やイベントの参加方法等、随時Twitter,Instagramで更新中！！<br>
                 ▼ぜひ↓のアカウントを『フォロー』,『拡散』してね
             </p>
             <a class="twitter-timeline" data-width="600" data-height="600" data-theme="dark" href="https://twitter.com/knct_fes_staff?ref_src=twsrc%5Etfw">Tweets by knct_fes_staff</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <p class="css-fade5">
-                <span>▼野生のツイッタラーが現れた！</span><br>
-                <span>　　　　　　　　　どうする？</span><br><br>
-                <span> ▼フォローする</span><br>
-                <span> ▼リツイートする</span><br>
-                <span> ▼ファボる</span><br>
-                <span> ▼ブロックする</span><br>
-            </p>
-            
+            <!-- SnapWidget -->
+            <p class="inst">▼ Instagram</p>
+            <iframe src="https://snapwidget.com/embed/743303" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:414px; height:680px"></iframe>
             <p class="tyosaku">© 2019 久留米高専 高専祭実行委員会　NIT,Kurume College<br>
                 管理者：久留米高専　高専祭実行委員会<br>
                 お問い合わせ：
@@ -98,40 +92,7 @@
             });
            });
         </script>
-    <style>
-        .css-fade5--in{
-          
-          animation-name:fade-in5;
-          animation-duration:1s;
-          animation-timing-function: ease-out; 
-          animation-iteration-count:1; 
-          animation-direction:normal; 
-          animation-fill-mode: forwards; 
-        }
-      
-        @keyframes fade-in5 {
-          0% {opacity: 0; transform: translate3d(0,30px,0);}
-          100% {opacity: 1; transform: translate3d(0,0,0);}
-        }
-        </style>
-<script>
-    document.addEventListener('DOMContentLoaded', function(){
-      $(window).on({
-        "scroll":function(e){
-          var startY= document.querySelector(".css-fade5").getBoundingClientRect().top, //表示させたい対象
-              windowHeight = window.innerHeight, // ブラウザの高さ
-              offset = windowHeight/3*2; //オフセット 画面の2/3
-          // 表示
-          if(startY<offset){
-            document.querySelector(".css-fade5").classList.add('css-fade5--in');
-          // ブラウザの外になったら消す
-          }else if(startY>windowHeight){
-            document.querySelector(".css-fade5").classList.remove('css-fade5--in');
-          }
-        }
-      })
-    });
-    </script>
+   
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </body>
 </html>

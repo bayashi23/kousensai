@@ -285,9 +285,37 @@ main{
       100% {
           opacity: 0;
           display: none;
-      }
-  }
-    
+      }}
+      
+.fade_off {
+    opacity: 0;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -ms-transition: all 1s;
+    transition: all 1s;
+    border: double 6px #fff;
+    padding: 5px;
+    margin: 5px 0px;
+}
+.fade_on {
+    opacity: 1;
+}
+.honbun{
+  font-family: PixelMplus12-Regular;
+  font-size: 20px;
+}
+.kodo{
+  list-style: none;
+  font-family: PixelMplus12-Regular;
+  font-size: 24px;
+}
+.kodo li{
+  margin: 5px;
+}
+.kodo a{
+  color: #fff;
+}
     @media only screen and (max-width:500px) {
   body{
     margin: 5px 0px;
@@ -312,5 +340,15 @@ main{
       }
       .yomikomi{
         font-size: 12px;
+      }
+      .honbun{
+        font-size: 15px;
+       
+      }
+      .fade_off{
+        margin: 3px;
+      }
+      .tyosaku{
+        font-size: 6px;
       }
       }
