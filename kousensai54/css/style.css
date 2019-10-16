@@ -1,0 +1,353 @@
+@import url(sanitize.css);
+@font-face{
+    font-family:'PixelMplus12-Regular';
+    src: url('PixelMplus12-Regular.ttf') format("truetype");
+}
+
+
+.phone{
+  display: none;
+}
+
+body{line-height:1.7;
+    background: #333;
+    color: #fff;
+    margin: 20px 0px;}
+
+header{text-align: center;
+}
+
+header h1{
+    font-family: PixelMplus12-Regular;
+}
+main{
+  margin: 10px 80px;
+}
+
+
+.title{
+    text-align: center;
+   
+}
+.dai{
+  text-decoration: none;
+  color: #fff;
+}
+.text{
+    display: inline-block;
+}
+.text2{
+  display: inline-block;
+  font-size: 20px;
+}
+
+.menu {
+   border: double 6px #fff; 
+   background-color: #333;
+    overflow: hidden;
+    list-style: none;
+    margin: 0 auto;
+    z-index: 20;
+}
+.menu li{
+    display: inline-block;
+    padding: 15px 25px 10px 25px;
+    
+}
+.menu li a{
+    
+    color: #fff;
+    font-family: PixelMplus12-Regular;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+
+.drawer {
+    font-family: PixelMplus12-Regular;
+    position:fixed;
+    top:0;
+    left:0;
+    width: 300px;
+    height: 100%;
+    background: #191919;
+    padding: 50px 10px;
+    -webkit-transform: translateX(-300px);
+    transform: translateX(-300px);
+    -webkit-transition:ease .5s;
+    transition:ease .5s;
+    z-index:9999;
+  }
+
+  .drbtn {
+    font-family: arial black;
+    position: fixed;
+    top:0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    -webkit-transition:ease .5s;
+    transition:ease .5s;
+    cursor:pointer;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    padding-bottom: 2px;
+    z-index: 10000;
+  }
+
+  .hambarg {
+    position: absolute;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    height: 2px;
+    width: 30px;
+    background: #fff;
+    -webkit-transition: ease .5s;
+    transition: ease .5s;
+  }
+  .hambarg:nth-child(1) {
+      top: 20%;
+      left: 50%;
+  }
+  .hambarg:nth-child(2) {
+      top: 40%;
+      left: 50%;
+  }
+  .hambarg:nth-child(3) {
+      top: 60%;
+      left: 50%;
+  }
+
+  .drawer.action {
+    -webkit-transform:translateX(0);
+    transform:translateX(0);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+   
+ 
+  .drbtn.action {
+    right: 0;
+  }
+  .drbtn.action{
+    .hambarg:nth-child(1) {
+      top: 50%;
+      -webkit-transform: translate(-50%,-50%) rotate(45deg);
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    .hambarg:nth-child(2) {
+      top: 50%;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      opacity: 0;
+    }
+    .hambarg:nth-child(3) {
+      top: 50%;
+      -webkit-transform: translate(-50%,-50%) rotate(-45deg);
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+  }
+  
+
+  .rist{
+      list-style: none;
+      overflow: hidden;
+      width: 250px;
+      padding: 0;
+      margin: 60px auto 100px;
+  }
+  .rist li{
+      list-style: none;
+      overflow: hidden;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid #333;
+
+  }
+
+  .rist li a{
+      display: block;
+      position: relative;
+      z-index: 10;
+      height: 50px;
+      margin: 0;
+      padding: 0 10px 0 60px;
+      background-color: #5f5f5f;
+      color: #fff;
+      font-size: 20px;
+      line-height: 50px;
+      font-weight: bold;
+      text-decoration: none;
+  }
+  .rist li a:hover{
+    background: #333;
+  }
+
+  #list1 li a:before{
+      display: block;
+      content: "";
+      position: absolute;
+      top:50%;
+      left: 25px;
+      width: 0;
+      height: 0;
+      margin-top: -5px;
+      border: 5px solid transparent;
+      border-left: 5px solid #fff; 
+  }
+  #list1 li a:after {
+        display: block;
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 21px;
+        width: 3px;
+        height: 10px;
+        margin-top: -5px;
+        background :#fff;
+    }
+
+    #list1 li a:hover:before {
+        left: 27px;
+    }
+
+    #list1 li a:hover:after {
+        left: 23px;
+    }
+
+    .slider{
+      margin: 0px auto;
+      display: block;
+      
+    }
+    .slider img{
+      padding: 0 150px;
+      background-color: #333;
+    }
+    #loading {
+      width: 100vw;
+      height: 100vh;
+      background: #000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+  }
+   
+  #loading_barWrap {
+      width: 30vw;
+      height: calc(1rem + 5px);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+  }
+   
+  #loading_bar {
+      width: 0;
+      height: 5px;
+      background: #fff;
+      transition-duration: 1s;
+  }
+   
+  .yomikomi {
+    font-size: 25px;
+      text-align: center;
+      color: #fff;
+      display: block;
+  }
+   
+  .loadingNone {
+      animation: loadingAnime 1s forwards;
+  }
+  .get{
+    float: left;
+  }
+  @keyframes loadingAnime {
+      0% {
+          opacity: 1;
+      }
+      99% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 0;
+          display: none;
+      }}
+      
+.fade_off {
+  
+    border: double 6px #fff;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+.honbun{
+  font-family: PixelMplus12-Regular;
+  font-size: 20px;
+}
+.kodo{
+  list-style: none;
+  font-family: PixelMplus12-Regular;
+  font-size: 24px;
+}
+.kodo li{
+  margin: 5px;
+}
+.kodo a{
+  color: #fff;
+}
+.gin{
+  position: absolute;
+  left: 700px;
+  top: 870px;
+
+}
+    @media only screen and (max-width:500px) {
+  body{
+    margin: 5px 0px;
+  }
+      .text{
+        font-size: 20px;
+      }
+      .text2{
+        display: none;
+      }
+      .menu{
+        display: none;
+      }
+      .phone{
+        display:block;
+      }
+      main{
+        margin: 10px 0px;
+      }
+      .slider img{
+        padding: 40px 0px;
+      }
+      .yomikomi{
+        font-size: 12px;
+      }
+      .honbun{
+        font-size: 15px;
+       
+      }
+      .fade_off{
+        margin: 3px;
+      }
+      .tyosaku{
+        font-size: 6px;
+      }
+      }
