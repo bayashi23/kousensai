@@ -3,31 +3,28 @@
     font-family:'PixelMplus12-Regular';
     src: url('PixelMplus12-Regular.ttf') format("truetype");
 }
-
-
 .phone{
-  display: none;
-}
-
+    display: none;
+  }
 body{line-height:1.7;
     background: #333;
     color: #fff;
     margin: 20px 0px;}
 
-header{text-align: center;
-}
+header{
+    text-align: center;
+   
+        }
 
 header h1{
     font-family: PixelMplus12-Regular;
-}
+}  
+
 main{
-  margin: 10px 80px;
+    margin: 10px 80px
 }
-
-
 .title{
     text-align: center;
-   
 }
 .dai{
   text-decoration: none;
@@ -52,7 +49,6 @@ main{
 .menu li{
     display: inline-block;
     padding: 15px 25px 10px 25px;
-    
 }
 .menu li a{
     
@@ -61,7 +57,6 @@ main{
     padding: 10px;
     font-size: 18px;
 }
-
 .is-fixed {
   position: fixed;
   top: 0;
@@ -224,161 +219,46 @@ main{
     #list1 li a:hover:after {
         left: 23px;
     }
-
-    .akus{
-      border: double 6px #fff;
-      margin: 10px 0;
-      color: #fff;
-      font-size: 20px;
+    
+    h3 {
+        font-family: PixelMplus12-Regular;
+        margin: 20px 40px;
+        
+    }
+    h4{
       font-family: PixelMplus12-Regular;
-      padding: 3px;
-      width: 300px;
-       }
-      .basho{
-        width: 500px;
-        height: 500px;
-        float: left;
-        margin: 0 20px;
-      }
-      .koutu{
-        margin: 0px 30px;
-      }
-      .norikata{
-        font-size: 15px;
-      }
-      .tyosaku{
-        clear: both;
-      }
-      .basu{
-        clear: both;
-      }
-      h4{
-        padding: 10px 0;
-      }
-      .nisi {
-        font-family: "Yu Gothic", YuGothic, Verdana, 'Hiragino Kaku Gothic ProN','Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 40px;
-       
-      }
-      h6{
-        font-size: 20px;
-        margin: 15px 0;
-      }
-      
-      .btn-box {
-        display: inline-block;
-        width: 200px;
-        text-align: center
-        font-size: 16px;
-        color: #9ec34b;
-        text-decoration: none;
-        font-weight: bold;
-        padding: 12px 24px;
-        position: relative;
-        border: 2px solid #9ec34b;
-        transition: .4s;
-      }
-      
-      .btn-box:hover {
-        border: 2px solid transparent;
-        color: #FFF;
-      }
-      
-      .btn-box:before, .btn-box:after {
-        width: 100%;
-        height: 100%;
-        z-index: 3;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        box-sizing: border-box;
-        transform: scale(0);
-        transition: .2s;
-      }
-      
-      .btn-box:before {
-        border-bottom: 2px solid #FFF;
-        border-left: 2px solid #FFF;
-        transform-origin: 100% 0%;
-      }
-      
-      .btn-box:after {
-        border-top: 2px solid #FFF;
-        border-right: 2px solid #FFF;
-        transform-origin: 0% 100%;
-      }
-      
-      .btn-box:hover:after,
-      .btn-box:hover:before {
-        transform: scale(1);
-      }
-      .tyaku{
-        font-size: 20px;
-        float: left;
-        margin: 0 30px;
-      }
-      .hatu{
-        font-size: 20px;
-        margin: 0 30px;
-      }
-
-      .tyui{
-        font-size: 30px;
-        color: #fa052b;
-      }
-    
+        margin: 20px 40px;
+    }
+    h5{
+      font-family: PixelMplus12-Regular;
+        margin: 20px 40px;
+    }
+   
+ 
     @media only screen and (max-width:500px) {
-  
-  body{
-    margin: 5px 0px;
-  }
-      .text{
-        font-size: 20px;
-      }
-      .text2{
-        display: none;
-      }
-      .menu{
-        display: none;
-      }
-      .phone{
-        display:block;
-      }
-      main{
-        margin: 10px 0px;
-      }
-    
-    .basho{
-      width: 300px;
-      height: 300px;
-      padding: 10px 0;
-      margin: 0 5px;
-    }
-    .norikata{
-      clear: both;
-      font-size: 10px;
-    }
-    .koutu img{
-      width: 300px;
-    }
-      .tyosaku{
-        font-size: 6px;
-        clear: both;
-      }
-      .akus{
-        font-size: 13px;
-      }
-      .hatu{
-        margin: 0;
-      }
-      .tyui{
-        font-size: 25px;
-      }
-      .tetu{
-        display: block;
-        max-width: 320px;
-      }
-    }
+        body{
+          margin: 5px 0px;
+        }
+        main{
+          margin: 10px 5px;
+        }
+            .text{
+              font-size: 20px;
+            }
+            .text2{
+              display: none;
+            }
+            .menu{
+              display: none;
+            }
+            .phone{
+              display:block;
+            }
+            .tyosaku{
+              font-size: 6px;
+            }
+            .honbun2{
+              font-size:  13px;
+            }
+         
+        }

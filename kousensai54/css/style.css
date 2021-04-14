@@ -309,12 +309,7 @@ main{
 .kodo a{
   color: #fff;
 }
-.gin{
-  position: absolute;
-  left: 700px;
-  top: 870px;
 
-}
     @media only screen and (max-width:500px) {
   body{
     margin: 5px 0px;
